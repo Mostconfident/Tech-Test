@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AnyCompany.Tests
+namespace AnyCompany.Services
 {
-    public class Class1
+    public interface ICustomerService
     {
+        Customer GetById(int id);
+
+        List<Customer> GetAll();
     }
 }
